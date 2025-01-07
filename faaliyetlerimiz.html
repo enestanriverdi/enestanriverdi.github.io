@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="keywords" content="Bilişim, Yazılım, Bilgisayar, Şirket, Milenyum" />
+    <meta name="description" content="Yazılım Şirketi" />
+    <title>FAALİYETLER•MİLENYUM</title>
+    <link rel="icon" type="image/jpg" sizes="32x32" href="images/logo.jpg">
+    <link rel="icon" type="image/jpg" sizes="16x16" href="images/logo.jpg">
+
+    <style>
+
+body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        padding: 20px;
+    }
+
+    h2 {
+     text-align: center; /* yazıyı ortala */
+     color: #333;/* yazı rengi */
+    }
+    .container {
+    max-width: 900px; /* max genislik */
+    margin: 0 auto;
+    background-color: white; /*arka plan rengi*/
+    padding: 20px; /* ögenin içerisindeki içerikle kenarları arasında 20px bosluk bırakılır. */
+    border-radius: 8px; /* ögenin kenarlarını yuvarlaklaştırır. */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* gölge efekti */
+    }
+    .section {
+    margin-bottom: 20px; /* öğenin alt kenarına 20 piksel mesafe ekler. */
+    }
+    .section h2 {
+     color: #444; 
+    }
+   .footer {
+    text-align: center;
+    margin-top: 30px; /* öğenin üst kenarına 30 piksel mesafe ekler. */
+    font-size: 0.9rem;
+    color: #777;
+    }
+        
+    /* Genel Stil */
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    }
+        
+    /* Üst Gezinti Menüsü */
+    nav {
+    background-color: #333;
+    position: sticky; /* sayfanın üstüne yapısmasını saglar */
+    top: 0; /* öğe kaydırıldığında sayfanın üstünde 0px mesafede yapısmasını sağlar */
+    width: 100%;
+    z-index: 1000; /* öğe başka bir öğe tarafından örtülenmesin. */
+    display: flex; /*Bu, içindeki öğelerin esnek bir şekilde yerleştirilmesini sağlar.*/
+    align-items: center;  /* nav içindekş ögeler dikey olarak merkeze sıralanır */
+    justify-content: space-between; /* öğeler arasındaki boşluk en büyük olacak şekilde yerleştirilir. */
+    padding: 10px 30px; /* İçerik ile kenarlar arasında bu boşluk oluşturulur. */
+    }
+        
+    nav .logo {
+    flex: 0 0 auto; /* Logoyu sola sabitler */
+    }
+        
+    nav .logo img {
+    height: 80px; /* Logo boyutu */
+    width: auto;
+    }
+        
+    nav ul {
+    list-style-type: none;  /* madde işaretlerini kaldırır. */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Menü elemanlarını ortalar */
+    flex: 1; /* Ortalamak için esneklik sağlar */
+    gap: 40px; /* Menü elemanları arasında boşluk */
+    }
+        
+    nav ul li {
+    position: relative; /* Alt menüler için */
+    }
+        
+    nav ul li a {
+    color: white;
+    text-decoration: none; /* Linkelrin altını çizme efektini kaldırır. */
+    padding: 10px 20px;
+    display: block;
+    font-size: 18px;
+    }
+        
+    nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+    }
+        
+    /* Dropdown Alt Menü */
+    nav ul li ul {
+    display: none; /* Alt menüyü gizle */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+        
+    nav ul li:hover > ul {
+    display: block; /* Alt menüyü göster */
+    }
+        
+    nav ul li ul li {
+    margin: 0;
+    }
+        
+    nav ul li ul li a {
+    padding: 10px 15px;
+    font-size: 14px;
+    color: white;
+    }
+        
+    nav ul li ul li a:hover {
+    background-color: #575757;
+    }
+        
+    /* Sayfa İçeriği */
+    section {
+    padding: 60px 20px;
+    text-align: center;
+    }
+        
+    section h1 {
+    color: #333;
+    font-size: 22px;
+    }
+        
+    section p {
+    font-size: 16px;
+    color: #555;
+    }
+        
+    /* Footer Menü */
+    footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 10px;
+    }
+        
+    footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    }
+        
+    footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    }
+        
+    footer ul li a:hover {
+    text-decoration: underline;
+    }
+
+    html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Yatay kaydırmayı gizler */
+    }
+    img, table {
+    max-width: 100%; /* Taşmayı önler */
+    height: auto; /* Orantılı olarak yüksekliği ayarlar */
+    }
+    nav ul {
+    max-width: 100%; /* Liste genişliğini sınırla */
+    flex-wrap: wrap; /* Elemanlar sığmazsa bir alt satıra geçir */
+    }
+        
+    </style>
+</head>
+
+
+<body>
+
+    <!-- Gezinti Menüsü -->
+    <nav>
+    <div class="logo">
+        <a href="index.html">
+        <img src="images/logo.jpg" alt="Logo" />
+        </a>
+    </div>
+    <ul>
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li>
+        <a href="faaliyetlerimiz.html">Faaliyetlerimiz</a>
+        <ul>
+        <li><a href="faaliyetlerimiz.html#e-ticaret">E-Ticaret</a></li>
+        <li><a href="faaliyetlerimiz.html#siber">Siber Güvenlik</a></li>
+        <li><a href="faaliyetlerimiz.html#egitim">Eğitim Teknolojileri</a></li>
+        <li><a href="faaliyetlerimiz.html#otomasyon">Otomasyon Yazılımları</a></li>
+        </ul>
+        </li>
+
+        <li><a href="hakkimizda.html">Hakkımızda</a>
+        <ul>
+        <li><a href="hakkimizda.html">BİZ KİMİZ?</a></li>
+        <li><a href="kurucuBilgi.html">ENES TANRIVERDİ</a></li>
+        </ul>
+        </li>
+
+        <li>
+        <a href="iletisim.html">İletişim</a>
+        <ul>
+        <li><a href="iletisim.html#iletisim">İletişim</a></li>
+        <li><a href="iletisim.html#sosyalMedya">Sosyal Medya</a></li>
+        </ul> 
+        </li>
+
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="sikcasorulansorular.html">SSS</a></li> 
+    </ul>
+</nav>
+<!-- Sayfa İçeriği -->
+
+<div class="container">
+    <h2 style="text-align: center;">FAALİYETLERİMİZ</h2><hr>
+
+    <div class="section">
+    <h3 id="e-ticaret" ><u>E-Ticaret Platformları</u></h3>
+
+    <img src="images/sirket16.jpg" alt="e-Ticaret" style="width: 35%; height: 35%; border: 5px solid black; display: block; margin-left: auto; margin-right: auto;" />
+
+    <p style="text-indent: 1cm;" >&nbsp;&nbsp;&nbsp;&nbsp;MİLENYUM SOFT, bünyesindeki uzman yazılımcılar ve ticaret danışmanlarıyla, dijital dünyanın önemli bir parçası haline gelen e-Ticaret platformları üzerinde iyileştirmeler yapmaktadır. 
+        Daha güvenli ödeme altyapıları sunmak amacıyla sürekli çalışmalar yürütülmektedir. Ayrıca, müşteri memnuniyetini her zaman üst düzeyde tutmayı hedefleyen algoritmalar geliştirilmektedir. 
+        Bugün 10 ülkede faaliyet gösteren "ALBATROS", 5 ülkede faaliyet gösteren "GÖTÜR" ve şirketimizin kısa bir süre önce çıkardığı, şu an yalnızca Türkiye ve Azerbaycan'da hizmet veren "Restoran Bul" isimli uygulamalar, şirketimizin ürünlerinden bazılarıdır.
+        </p>
+    </div>
+
+    <div class="section">
+    <h3 id="siber" ><u>Siber Güvenlik Hizmetleri</u></h3>
+    
+    <img src="images/sirket17.jpg" alt="e-Ticaret" style="width: 35%; height: 35%; border: 5px solid black; display: block; margin-left: auto; margin-right: auto;" />
+
+    <p style="text-indent: 1cm;">&nbsp;&nbsp;&nbsp;&nbsp;Dış dünyada olduğu gibi sanal alemde de güvenlik önemlidir. 
+        Tıpkı her bireyin parmak izi olduğu gibi, sanal dünyada da her bireyin siber ayak izi vardır. 
+        MİLENYUM SOFT, bireylerin sanal alemde güvenliğini sağlamak amacıyla çeşitli yazılımlar geliştirirken aynı zamanda seminerler düzenleyerek farkındalık yaratmaktadır. 
+        Şirketimiz, kurumlara siber güvenlik danışmanlığı hizmeti sunmakta ve veri güvenliğine büyük önem vermektedir. 
+        MİLENYUM SOFT, alanında uzman siber güvenlik uzmanlarıyla çalışmakta ve özel araştırma ekipleri kurarak bu alanda araştrıma - geliştirme çalışmalarını sürdürmektedir.
+        </p>
+    </div>
+
+    <div class="section">
+    <h3 id="egitim"><u>Eğitim Teknolojileri</u></h3>
+
+    <img src="images/sirket15.jpg" alt="e-Ticaret" style="width: 35%; height: 35%; border: 5px solid black; display: block; margin-left: auto; margin-right: auto;" />
+
+    <p style="text-indent: 1cm;">&nbsp;&nbsp;&nbsp;&nbsp;Eğitim, insan yaşamının temel taşlarından biridir. 
+        Şirketimiz, gelişen teknolojiyle interaktif eğitimin daha verimli hale geleceğine inanmaktadır. 
+        Bu doğrultuda, ülkemizin resmi kurumlarıyla işbirliği içerisinde olup alanında uzman kişiler tarafından hazırlanan ders materyalleri, üç boyutlu sanal sınıflar ve öğretici-öğretici içeriklere sahip platformlar üzerinde çalışmalar yapmaktadır. 
+        Ayrıca; yaz kampları, kış kampları, staj programları, burs programları ve çeşitli seminerler ile öğrencilere destek sağlamak hedeflenmektedir.
+        </p>
+    </div>
+
+    <div class="section">
+    <h3 id="otomasyon"><u>Otomasyon Yazılımları</u></h3>
+       
+    <img src="images/sirket18.jpg" alt="e-Ticaret" style="width: 35%; height: 35%; border: 5px solid black; display: block; margin-left: auto; margin-right: auto;" />
+
+    <p style="text-indent: 1cm;">&nbsp;&nbsp;&nbsp;&nbsp;MİLENYUM SOFT, hizmet sektörü ve üretim alanlarında faaliyet gösteren kurumların verimliliğini artırmak için otomasyon yazılımları geliştirmektedir. 
+        Şirketimiz, endüstriyel süreçlerin dijitalleşmesi, iş gücü maliyetlerinin düşürülmesi ve daha hızlı karar verme mekanizmaları sağlanması amacıyla özel yazılımlar sunmaktadır. 
+        Ayrıca, iş süreçlerini otomatikleştiren ve kullanıcı dostu olan yazılımlar ile şirketlerin işleyişlerini daha verimli hale getirmekteyiz.
+        </p>
+    </div>
+
+    <div class="footer">
+    <p>&copy; 2025 MİLENYUM SOFT. Tüm hakları saklıdır.</p>
+    </div>
+</div>
+
+
+<!-- Footer Menü -->
+<footer>
+    <ul>
+    <li><a href="gizlilik.html">Gizlilik</a></li>
+    <li><a href="kullaniciSozlesmesi.html">Kullanıcı Sözleşmesi</a></li>
+    <li><a href="iletisim.html">İletişim</a></li>
+    </ul>
+</footer>
+
+</body>
+</html>

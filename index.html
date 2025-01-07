@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="keywords" content="Bilişim, Yazılım, Bilgisayar, Şirket, Milenyum" />
+    <meta name="description" content="Yazılım Şirketi" />
+    <title>MİLENYUM SOFT</title>
+    <link rel="icon" type="image/jpg" sizes="32x32" href="images/logo.jpg">
+    <link rel="icon" type="image/jpg" sizes="16x16" href="images/logo.jpg">
+
+    <style>
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0; /* Kenar boşluklarını sıfırla */
+    padding: 0; /* Kenar boşluklarını sıfırla */
+    background-image: url('images/backgroung.jpg'); /* Arka plan resmi */
+    background-size: cover; /* Resmi tam olarak sığdır */
+    background-position: center; /* Resmi ortala */
+    background-repeat: no-repeat; /* Tekrar etmesini engelle */
+    color: #333; /* Yazı rengi */
+}
+h2 {
+    text-align: center; /* yazıyı ortala */
+    color: #333;/* yazı rengi */
+}
+.container {
+    max-width: 900px; /* max genislik */
+    margin: 0 auto;
+    background-color: white; /*arka plan rengi*/
+    padding: 20px; /* ögenin içerisindeki içerikle kenarları arasında 20px bosluk bırakılır. */
+    border-radius: 8px; /* ögenin kenarlarını yuvarlaklaştırır. */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* gölge efekti */
+}
+.section {
+    margin-bottom: 20px; /* öğenin alt kenarına 20 piksel mesafe ekler. */
+}
+.section h2 {
+    color: #444; 
+}
+.footer {
+    text-align: center;
+    margin-top: 30px; /* öğenin üst kenarına 30 piksel mesafe ekler. */
+    font-size: 0.9rem;
+    color: #777;
+}
+
+
+/* Genel Stil */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0; /* kenar boşluklarını sıfırla */
+    background-image: url(images/backgroung.jpg); /* arkaplan resmi */
+}
+
+/* Üst Gezinti Menüsü */
+nav {
+    background-color: #333;
+    position: sticky; /* sayfanın üstüne yapısmasını saglar */
+    top: 0; /* öğe kaydırıldığında sayfanın üstünde 0px mesafede yapısmasını sağlar */
+    width: 100%;
+    z-index: 1000; /* öğe başka bir öğe tarafından örtülenmesin. */
+    display: flex; /*Bu, içindeki öğelerin esnek bir şekilde yerleştirilmesini sağlar.*/
+    align-items: center;  /* nav içindekş ögeler dikey olarak merkeze sıralanır */
+    justify-content: space-between; /* öğeler arasındaki boşluk en büyük olacak şekilde yerleştirilir. */
+    padding: 10px 30px; /* İçerik ile kenarlar arasında bu boşluk oluşturulur. */
+}
+
+nav .logo {
+    flex: 0 0 auto; /* Logoyu sola sabitler */
+}
+
+nav .logo img {
+    height: 80px; /* Logo boyutu */
+    width: auto;
+}
+
+nav ul {
+    list-style-type: none;  /* madde işaretlerini kaldırır. */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Menü elemanlarını ortalar */
+    flex: 1; /* Ortalamak için esneklik sağlar */
+    gap: 40px; /* Menü elemanları arasında boşluk */
+}
+
+nav ul li {
+    position: relative; /* Alt menüler için */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none; /* Linkelrin altını çizme efektini kaldırır. */
+    padding: 10px 20px;
+    display: block;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Dropdown Alt Menü */
+nav ul li ul {
+    display: none; /* Alt menüyü gizle */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+nav ul li:hover > ul {
+    display: block; /* Alt menüyü göster */
+}
+
+nav ul li ul li {
+    margin: 0;
+}
+
+nav ul li ul li a {
+    padding: 10px 15px;
+    font-size: 14px;
+    color: white;
+}
+
+nav ul li ul li a:hover {
+    background-color: #575757;
+}
+
+/* Sayfa İçeriği */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section h1 {
+    color: #333;
+    font-size: 22px;
+}
+
+section p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Footer Menü */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 10px;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Yatay kaydırmayı gizler */
+    }
+    img, table {
+        max-width: 100%; /* Taşmayı önler */
+        height: auto; /* Orantılı olarak yüksekliği ayarlar */
+    }
+    nav ul {
+        max-width: 100%; /* Liste genişliğini sınırla */
+        flex-wrap: wrap; /* Elemanlar sığmazsa bir alt satıra geçir */
+    }
+
+
+</style>
+        </head>
+<body>
+
+<!-- Gezinti Menüsü -->
+<nav>
+<div class="logo">
+<a href="index.html">
+<img src="images/logo.jpg" alt="Logo" />
+</a>
+</div>
+    <ul>
+    <li><a href="index.html">Ana Sayfa</a></li>
+    <li>
+    <a href="faaliyetlerimiz.html">Faaliyetlerimiz</a>
+    <ul>
+    <li><a href="faaliyetlerimiz.html#e-ticaret">E-Ticaret</a></li>
+    <li><a href="faaliyetlerimiz.html#siber">Siber Güvenlik</a></li>
+    <li><a href="faaliyetlerimiz.html#egitim">Eğitim Teknolojileri</a></li>
+    <li><a href="faaliyetlerimiz.html#otomasyon">Otomasyon Yazılımları</a></li>
+    </ul>
+    </li>
+<li><a href="hakkimizda.html">Hakkımızda</a>
+    <ul>
+    <li><a href="hakkimizda.html">BİZ KİMİZ?</a></li>
+    <li><a href="kurucuBilgi.html">ENES TANRIVERDİ</a></li>
+    </ul>
+</li>
+<li>
+    <a href="iletisim.html">İletişim</a>
+    <ul>
+    <li><a href="iletisim.html#iletisim">İletişim</a></li>
+    <li><a href="iletisim.html#sosyalMedya">Sosyal Medya</a></li>
+    </ul> 
+</li>
+<li><a href="galeri.html">Galeri</a></li>
+<li><a href="sikcasorulansorular.html">SSS</a></li> 
+</ul>
+</nav>
+
+<!-- Sayfa İçeriği -->
+
+<div class="container">
+    <h2 style="font-family: Elephant ;", style="text-align: center;" name="ana sayfa baslik"><U>MİLENYUM SOFT</U></h2>
+    <br>
+
+    <div class="section">        
+    
+        <img src="images/logo.jpg" alt="Logo" style="width: 30%; height: 30%; border: 5px solid black; display: block; margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 5px;" />
+        <br><br>
+<table border="10%" bordercolor="#283c54" cellspacing="17%" cellpadding="22%">
+<tr style="display: flex; justify-content: space-between;">
+    <td style="text-align: center; font-weight: bold; font-size: 16px; font-family: 'Times New Roman', sans-serif; width: 16.66%; height: 60px; display: flex; align-items: center; justify-content: center;">
+        <a href="hakkimizda.html" style="text-decoration: none; color: black;">HAKKIMIZDA</a>
+    </td>
+    <td style="text-align: center; font-weight: bold; font-size: 16px; font-family: 'Times New Roman', sans-serif; width: 16.66%; height: 60px; display: flex; align-items: center; justify-content: center;">
+        <a href="faaliyetlerimiz.html" style="text-decoration: none; color: black;">FAALİYETLERİMİZ</a>
+    </td>
+    <td style="text-align: center; font-weight: bold; font-size: 16px; font-family: 'Times New Roman', sans-serif; width: 16.66%; height: 60px; display: flex; align-items: center; justify-content: center;">
+        <a href="kurucuBilgi.html" style="text-decoration: none; color: black;">ENES TANRIVERDİ</a>
+    </td>
+    <td style="text-align: center; font-weight: bold; font-size: 16px; font-family: 'Times New Roman', sans-serif; width: 16.66%; height: 60px; display: flex; align-items: center; justify-content: center;">
+        <a href="iletisim.html" style="text-decoration: none; color: black;">İLETİŞİM</a>
+    </td>
+    <td style="text-align: center; font-weight: bold; font-size: 16px; font-family: 'Times New Roman', sans-serif; width: 16.66%; height: 60px; display: flex; align-items: center; justify-content: center;">
+        <a href="galeri.html" style="text-decoration: none; color: black;">GALERİ</a>
+    </td>
+    <td style="text-align: center; font-weight: bold; font-size: 16px; font-family: 'Times New Roman', sans-serif; width: 16.66%; height: 60px; display: flex; align-items: center; justify-content: center;">
+        <a href="sikcasorulansorular.html" style="text-decoration: none; color: black;">SSS</a>
+    </td>
+</tr>
+</table>
+
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 MİLENYUM SOFT. Tüm hakları saklıdır.</p>
+    </div>
+</div>
+
+
+<!-- Footer Menü -->
+<footer>
+    <ul>
+    <li><a href="gizlilik.html">Gizlilik</a></li>
+    <li><a href="kullaniciSozlesmesi.html">Kullanıcı Sözleşmesi</a></li>
+    <li><a href="iletisim.html">İletişim</a></li>
+    </ul>
+</footer>
+
+</body>
+</html>

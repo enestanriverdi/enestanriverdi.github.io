@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="keywords" content="Bilişim, Yazılım, Bilgisayar, Şirket, Milenyum" />
+    <meta name="description" content="Yazılım Şirketi" />
+    <title>SSS•MİLENYUM SOFT</title>
+    <link rel="icon" type="image/jpg" sizes="32x32" href="images/logo.jpg">
+    <link rel="icon" type="image/jpg" sizes="16x16" href="images/logo.jpg">
+    
+    <style>
+
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    }
+
+    .faq-section {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    }
+
+    .faq-item {
+    margin-bottom: 15px;
+    }
+
+    .question {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+
+    .answer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    display: none; /* Cevaplar gizli başlangıçta */
+    }
+
+    .faq-item:hover .answer {
+    display: block; /* Sadece hover olduğunda cevap görünür */
+    }
+
+
+    /* Genel Stil */
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    }
+
+    /* Üst Gezinti Menüsü */
+    nav {
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    }
+
+    nav .logo {
+    flex: 0 0 auto; /* Logoyu sola sabitler */
+    }
+
+    nav .logo img {
+    height: 80px; /* Logo boyutu */
+    width: auto;
+    }
+
+    nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Menü elemanlarını ortalar */
+    flex: 1; /* Ortalamak için esneklik sağlar */
+    gap: 40px; /* Menü elemanları arasında boşluk */
+    }
+
+    nav ul li {
+    position: relative; /* Alt menüler için */
+    }
+
+    nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    font-size: 18px;
+    }
+
+    nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+    }
+
+    /* Dropdown Alt Menü */
+    nav ul li ul {
+    display: none; /* Alt menüyü gizle */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    nav ul li:hover > ul {
+    display: block; /* Alt menüyü göster */
+    }
+
+    nav ul li ul li {
+    margin: 0;
+    }
+
+    nav ul li ul li a {
+    padding: 10px 15px;
+    font-size: 14px;
+    color: white;
+    }
+
+    nav ul li ul li a:hover {
+    background-color: #575757;
+    }
+
+    /* Sayfa İçeriği */
+    section {
+    padding: 60px 20px;
+    text-align: center;
+    }
+
+    section h1 {
+    color: #333;
+    font-size: 22px;
+    text-align: center;
+    }
+
+    section p {
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+    }
+    frame {
+    text-align: center;
+    }
+
+    /* Footer Menü */
+    footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 10px;
+    }
+
+    footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    }
+
+    footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    }
+
+    footer ul li a:hover {
+    text-decoration: underline;
+    }
+    html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Yatay kaydırmayı gizler */
+    }
+    img, table {
+    max-width: 100%; /* Taşmayı önler */
+    height: auto; /* Orantılı olarak yüksekliği ayarlar */
+    }
+    nav ul {
+    max-width: 100%; /* Liste genişliğini sınırla */
+    flex-wrap: wrap; /* Elemanlar sığmazsa bir alt satıra geçir */
+    }
+    </style>
+</head>
+<body>
+
+<!-- Gezinti Menüsü -->
+<nav>
+    <div class="logo">
+    <a href="index.html">
+    <img src="images/logo.jpg" alt="Logo" />
+    </a>
+    </div>
+    <ul>
+    <li><a href="index.html">Ana Sayfa</a></li>
+    <li>
+    <a href="faaliyetlerimiz.html">Faaliyetlerimiz</a>
+    <ul>
+    <li><a href="faaliyetlerimiz.html#e-ticaret">E-Ticaret</a></li>
+    <li><a href="faaliyetlerimiz.html#siber">Siber Güvenlik</a></li>
+    <li><a href="faaliyetlerimiz.html#egitim">Eğitim Teknolojileri</a></li>
+    <li><a href="faaliyetlerimiz.html#otomasyon">Otomasyon Yazılımları</a></li>
+    </ul>
+    </li>
+    <li><a href="hakkimizda.html">Hakkımızda</a>
+    <ul>
+    <li><a href="hakkimizda.html">BİZ KİMİZ?</a></li>
+    <li><a href="kurucuBilgi.html">ENES TANRIVERDİ</a></li>
+    </ul>
+    </li>
+    <li>
+    <a href="iletisim.html">İletişim</a>
+    <ul>
+    <li><a href="iletisim.html#iletisim">İletişim</a></li>
+    <li><a href="iletisim.html#sosyalMedya">Sosyal Medya</a></li>
+    </ul> 
+    </li>
+    <li><a href="galeri.html">Galeri</a></li>
+    <li><a href="sikcasorulansorular.html">SSS</a></li> 
+    </ul>
+</nav>
+
+<!-- Sayfa İçeriği -->
+
+<div class="faq-section">
+    <h1>Sıkça Sorulan Sorular</h1><hr><br>
+    <div class="faq-item">
+    <h2 class="question">1. Şirketiniz hangi hizmetleri sunuyor?</h2>
+    <p class="answer">MİLENYUM SOFT, yazılım geliştirme, siber güvenlik, e-ticaret çözümleri ve eğitim teknolojileri gibi birçok hizmet sunmaktadır.</p>
+    </div>
+    <div class="faq-item">
+    <h2 class="question">2. Şirketinize nasıl başvurabilirim?</h2>
+    <p class="answer">Şirketimize başvurmak için web sitemiz üzerinden başvuru formunu doldurabilir veya iş ilanlarını takip edebilirsiniz.</p>
+    </div>
+    <div class="faq-item">
+    <h2 class="question">3. Müşteri desteğiniz nasıl çalışıyor?</h2>
+    <p class="answer">Müşteri destek ekibimiz, 7/24 telefon, e-posta veya canlı sohbet yoluyla hizmet vermektedir.</p>
+    </div>
+    <div class="footer">
+    <p>&copy; 2025 MİLENYUM SOFT. Tüm hakları saklıdır.</p>
+    </div>
+</div>
+
+
+<!-- Footer Menü -->
+<footer>
+    <ul>
+    <li><a href="gizlilik.html">Gizlilik</a></li>
+    <li><a href="kullaniciSozlesmesi.html">Kullanıcı Sözleşmesi</a></li>
+    <li><a href="iletisim.html">İletişim</a></li>
+    </ul>
+</footer>
+
+</body>
+</html>
